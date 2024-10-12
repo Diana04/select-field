@@ -1,0 +1,117 @@
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 450px;
+    min-height: 44px;
+    padding: 8px 12px 8px 8px;
+    background: #fff;
+    border: 1px solid rgba(19, 8, 23, 0.1);
+    border-radius: 8px;
+    cursor: text;
+    transition: 0.2s;
+
+    &--focused, &:hover {
+        border-color: rgba(110, 50, 140, 0.48);
+        box-shadow: 0 0 0 3px rgba(113, 48, 142, 0.12);
+    }
+
+    &--error {
+        border-color: #e8433d;
+        box-shadow: 0 0 0 3px rgba(232, 67, 61, 0.12);
+    }
+}
+
+.input {
+    display: inline-block;
+    width: 1px;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 147%;
+    letter-spacing: -0.01em;
+    color: rgba(19, 8, 23, 0.9);
+
+    &::placeholder {
+        font-weight: 500;
+        color: rgba(19, 8, 23, 0.4);
+    }
+}
+
+.arrow-icon {
+    cursor: pointer;
+    transform: rotate(180deg);
+    min-width: 20px;
+
+    & path {
+        fill: rgba(19, 8, 23, 0.3);
+    }
+
+    &--opened {
+        transform: rotate(0deg);
+    }
+}
+
+.search-icon {
+    margin-right: 8px;
+    min-width: 20px;
+
+    & path {
+        fill: rgba(19, 8, 23, 0.3);
+    }
+}
+
+.label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 133%;
+    letter-spacing: -0.02em;
+    color: rgba(19, 8, 23, 0.9);
+}
+
+.hint {
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 138%;
+    letter-spacing: -0.01em;
+    color: rgba(19, 8, 23, 0.4);
+}
+
+.input-content {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin: -2px;
+
+    &__item {
+        margin: 2px;
+    }
+}
+
+.dropdown {
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(19, 8, 23, 0.05);
+    border-radius: 8px;
+    margin-top: 8px;
+    padding: 4px;
+    min-width: 292px;
+    max-height: 170px;
+    backdrop-filter: blur(24px);
+    box-shadow: 0 16px 64px -4px rgba(22, 8, 30, 0.08);
+    background: #fff;
+    overflow-y: scroll;
+}
+
+.dropdown-option {
+    display: flex;
+    align-items: center;
+}

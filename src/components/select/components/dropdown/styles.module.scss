@@ -1,0 +1,20 @@
+.dropdown {
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(19, 8, 23, 0.05);
+    border-radius: 8px;
+    margin-top: 8px;
+    padding: 4px;
+    max-height: 170px;
+    backdrop-filter: blur(24px);
+    box-shadow: 0 16px 64px -4px rgba(22, 8, 30, 0.08);
+    background: #fff;
+    overflow-y: scroll;
+}
+
+.dropdown-option {
+    display: flex;
+    align-items: center;
+}

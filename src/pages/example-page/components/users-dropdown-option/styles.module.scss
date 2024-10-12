@@ -1,0 +1,70 @@
+.option {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    border-radius: 4px;
+    padding: 8px 16px 8px 8px;
+    transition: background-color 0.2s;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 147%;
+    letter-spacing: -0.01em;
+    color: rgba(19, 8, 23, 0.9);
+    cursor: pointer;
+
+    &:hover {
+        background: rgba(19, 8, 23, 0.05);
+    }
+}
+
+.img {
+    border-radius: 300px;
+    border: 0.50px solid rgba(19, 8, 23, 0.05);
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 147%;
+    letter-spacing: -0.01em;
+    color: rgba(19, 8, 23, 0.9);
+    max-width: 100%;
+}
+
+.subtitle {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 138%;
+    letter-spacing: -0.01em;
+    color: rgba(19, 8, 23, 0.4);
+    max-width: 100%;
+    text-overflow: ellipsis;
+}
+
+.checkbox-icon {
+    min-width: 26px;
+
+    & rect {
+        fill: #6e328c;
+    }
+
+    & path {
+        stroke: #fff;
+    }
+}
+
+.context-icon {
+    margin-right: 8px;
+}

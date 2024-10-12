@@ -1,0 +1,30 @@
+.option {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    padding: 8px 12px;
+    height: 36px;
+    transition: background-color 0.2s;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 147%;
+    letter-spacing: -0.01em;
+    color: rgba(19, 8, 23, 0.9);
+    cursor: pointer;
+
+    &:hover {
+        background: rgba(19, 8, 23, 0.05);
+    }
+}
+
+.checkbox-icon {
+    & rect {
+        fill: #6e328c;
+    }
+
+    & path {
+        stroke: #fff;
+    }
+}

@@ -1,0 +1,22 @@
+.chip {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    padding: 4px;
+    height: 24px;
+    background: rgba(110, 50, 140, 0.06);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 133%;
+    letter-spacing: -0.01em;
+    color: #6e328c;
+}
+
+.close-icon {
+    margin-left: 2px;
+    cursor: pointer;
+
+    & path {
+        fill: #6e328c;
+    }
+}
